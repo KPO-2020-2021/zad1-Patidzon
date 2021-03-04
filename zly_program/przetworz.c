@@ -66,6 +66,9 @@ int RozmiarNajdluzszegoSlowa(char* Tekst)
  *    Tekst - wskaznik na tekst, dla ktorego ma byc wyznaczona
  *            dlugosc najdluzszego slowa, ktore w nim sie znajduje.
  */
+
+
+
 void ZamienNaPodkreslenie(char* Tekst)
 {
   for (; *Tekst; ++Tekst)
@@ -112,7 +115,7 @@ int IloscMalychLiter(char *Tekst)
  *  Wartosc zwracana:
  *    Ilosc wielkich liter.
  */
-int IloscWielkichLiter(char *Tekst)
+ int IloscWielkichLiter(char *Tekst)
 {
   int Ilosc = 0;
   
@@ -121,11 +124,11 @@ int IloscWielkichLiter(char *Tekst)
   return Ilosc;
 }
 
-
+/*nalezało zmienić *napis na napis[]*/
 
 int main()
 {
-  char *Napis = "Jak dobrze jest wstac skoro swit. Jutrzenki blask ...";
+  char Napis[] = "Jak dobrze jest wstac skoro swit. Jutrzenki blask ...";
   int IloscSpacji;
   int DlugoscSlowaXXX;
   int IloscMaLiter = 0;
