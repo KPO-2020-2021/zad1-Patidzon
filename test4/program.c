@@ -1,7 +1,7 @@
 #include <stdio.h>
+/*nalezalo dodać argumenty funkcji w jej prototypie*/
 
-
-double Dodaj();
+double Dodaj(double, double);
 
 
 int main( )
