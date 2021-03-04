@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <math.h>
-
+/*
+przy kompilacji programu nalezy dodac biblioteke matematyczna (-lm). 
+Wowczas program kompiluje sie poprawnie w c i c++
+ */
 
 struct TrojmianKw {
   double  a;
