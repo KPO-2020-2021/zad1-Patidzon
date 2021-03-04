@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <string.h>
-
+/* nalezalo zmienic '¶' i char w sizof na int po¼niej program dzia³a poprawnie*/
 
 
 char Zamien( int KodZnaku, int *TabKodow, char *TabZnakow, int Rozmiar)
@@ -27,10 +27,10 @@ void KonwertujNapis( char *Napis, int *TabKodow, char *TabZnakow, int Rozmiar)
 int main()
 {
   int  IloscKodow = 10;
-  int  Rozmiar = IloscKodow * sizeof('¶');
+  int  Rozmiar = IloscKodow * sizeof(int);
 
   int  *TabKodow = (int*)malloc(Rozmiar);
-  char *TabZnakow = (char*)malloc(IloscKodow*sizeof(char)); 
+  char *TabZnakow = (char*)malloc(IloscKodow*sizeof(int)); 
   char *Napis = strdup("Cze¶æ ¦wiecie!!! ¯yczê mi³ego dnia.");
 
   TabKodow[0] = 'æ';     TabZnakow[0] = 'c';
